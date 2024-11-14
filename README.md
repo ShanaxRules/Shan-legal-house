@@ -1,0 +1,1 @@
+Created a legal service landing page using HTML , CSS , TailwindCSS , DaisyUI. Made it responsive for all devices.
