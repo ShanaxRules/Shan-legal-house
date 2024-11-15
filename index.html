@@ -234,7 +234,8 @@
 
 
     <section class="mb-16 mx-7">
-        <h1 class="text-gray-700 font-bold text-center lg:text-3xl md:text-3xl text-xl mb-6" style="font-family: EB Garamond;">What our client says
+        <h1 class="text-gray-700 font-bold text-center lg:text-3xl md:text-3xl text-xl mb-6"
+            style="font-family: EB Garamond;">What our client says
         </h1>
         <p class=" text-gray-400 text-center text-sm lg:text-base md:text-base">Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Nesciunt
@@ -245,8 +246,9 @@
     <section class="mx-10 rounded-2xl mb-28">
         <div class="carousel w-full h-[600px] rounded-2xl">
             <div id="slide1" class="carousel-item relative w-full h-[600px]"
-                style="background-image: url(images/slider-1.jpg);background-position: center; background-repeat: no-repeat;">
+                style="background-image: url(images/slider-1.jpg); background-position: center; background-repeat: no-repeat;">
                 <div class="w-full h-full flex flex-col justify-center items-center">
+                    <!-- Content for slide 1 -->
                     <div class="rounded-full"><img class="w-[70px] h-[70px] rounded-full" src="images/Ellipse 1.png"
                             alt=""></div>
                     <div>
@@ -269,21 +271,16 @@
                             <rect x="90" width="40" height="3" fill="#707070" />
                         </svg>
                     </div>
-
-
-
                 </div>
-
-
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="text-white font-bold">❮</a>
-                    <a href="#slide2" class="text-white font-bold">❯</a>
+                    <a onclick="navigateCarousel(4)" class="text-white font-bold cursor-pointer">❮</a>
+                    <a onclick="navigateCarousel(2)" class="text-white font-bold cursor-pointer">❯</a>
                 </div>
-
             </div>
             <div id="slide2" class="carousel-item relative w-full h-[600px]"
-                style="background-image: url(images/slider-2.jpg);background-position: center;background-repeat: no-repeat;">
+                style="background-image: url(images/slider-2.jpg); background-position: center; background-repeat: no-repeat;">
                 <div class="w-full h-full flex flex-col justify-center items-center">
+                    <!-- Content for slide 2 -->
                     <div class="rounded-full"><img class="w-[70px] h-[70px] rounded-full" src="images/Ellipse 1.png"
                             alt=""></div>
                     <div>
@@ -297,8 +294,8 @@
                             Nostrum nisi
                             molestiae optio. Provident tenetur accusamus eligendi debitis commodi molestias voluptatum!
                         </p>
-
                     </div>
+
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="130" height="3" viewBox="0 0 130 3" fill="none">
                             <rect width="40" height="3" fill="#707070" />
@@ -306,19 +303,16 @@
                             <rect x="90" width="40" height="3" fill="#707070" />
                         </svg>
                     </div>
-
-
-
                 </div>
-
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" class="text-white font-bold">❮</a>
-                    <a href="#slide3" class="text-white font-bold">❯</a>
+                    <a onclick="navigateCarousel(1)" class="text-white font-bold cursor-pointer">❮</a>
+                    <a onclick="navigateCarousel(3)" class="text-white font-bold cursor-pointer">❯</a>
                 </div>
             </div>
             <div id="slide3" class="carousel-item relative w-full h-[600px]"
-                style="background-image: url(images/slider-3.jpg);background-position: center; background-repeat: no-repeat;">
+                style="background-image: url(images/slider-3.jpg); background-position: center; background-repeat: no-repeat;">
                 <div class="w-full h-full flex flex-col justify-center items-center">
+                    <!-- Content for slide 3 -->
                     <div class="rounded-full"><img class="w-[70px] h-[70px] rounded-full" src="images/Ellipse 1.png"
                             alt=""></div>
                     <div>
@@ -341,26 +335,18 @@
                             <rect x="90" width="40" height="3" fill="white" />
                         </svg>
                     </div>
-
-
-
                 </div>
-
                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" class="text-white font-bold">❮</a>
-                    <a href="#slide1" class="text-white font-bold">❯</a>
+                    <a onclick="navigateCarousel(2)" class="text-white font-bold cursor-pointer">❮</a>
+                    <a onclick="navigateCarousel(1)" class="text-white font-bold cursor-pointer">❯</a>
                 </div>
             </div>
-
         </div>
-
-
-
-
     </section>
 
     <section class="mb-16 mx-7">
-        <h1 class="text-gray-700 font-bold text-center lg:text-3xl md:text-3xl text-xl mb-6" style="font-family: EB Garamond;">Frequently Asked Questions
+        <h1 class="text-gray-700 font-bold text-center lg:text-3xl md:text-3xl text-xl mb-6"
+            style="font-family: EB Garamond;">Frequently Asked Questions
         </h1>
         <p class="text-gray-400 text-center text-sm lg:text-base md:text-base">Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Nesciunt
@@ -372,14 +358,16 @@
             <div class="flex flex-col gap-y-5 flex-1">
                 <div class="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium"  style="font-family: EB Garamond;">Are application fee waived?</div>
+                    <div class="collapse-title text-xl font-medium" style="font-family: EB Garamond;">Are application
+                        fee waived?</div>
                     <div class="collapse-content">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, maiores?</p>
                     </div>
                 </div>
                 <div class="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium"  style="font-family: EB Garamond;">Where to find the services?</div>
+                    <div class="collapse-title text-xl font-medium" style="font-family: EB Garamond;">Where to find the
+                        services?</div>
                     <div class="collapse-content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, provident. Lorem
                             ipsum dolor sit amet consectetur adipisicing elit. Eveniet, accusantium recusandae?</p>
@@ -387,7 +375,8 @@
                 </div>
                 <div class="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium"  style="font-family: EB Garamond;">Are we hoping for a change</div>
+                    <div class="collapse-title text-xl font-medium" style="font-family: EB Garamond;">Are we hoping for
+                        a change</div>
                     <div class="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente temporibus, perferendis at
                             optio quidem voluptatem!</p>
@@ -395,7 +384,8 @@
                 </div>
                 <div class="collapse collapse-plus bg-base-200">
                     <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium"  style="font-family: EB Garamond;">Is their existance?</div>
+                    <div class="collapse-title text-xl font-medium" style="font-family: EB Garamond;">Is their
+                        existance?</div>
                     <div class="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente temporibus, perferendis at
                             optio quidem voluptatem!</p>
@@ -434,7 +424,8 @@
 
 
     <section class="mb-16 mx-7">
-        <h1 class="text-gray-700 font-bold text-center lg:text-3xl md:text-3xl text-xl mb-6"  style="font-family: EB Garamond;">Contact with us
+        <h1 class="text-gray-700 font-bold text-center lg:text-3xl md:text-3xl text-xl mb-6"
+            style="font-family: EB Garamond;">Contact with us
         </h1>
         <p class="text-gray-400 text-center text-sm lg:text-base md:text-base">Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Nesciunt
@@ -449,7 +440,7 @@
                 class="bg-gray-100 p-6 flex justify-center items-center flex-col border-[1px] border-gray-400 border-collapse">
                 <div class="mb-4"><img src="images/location.png" alt=""></div>
                 <div>
-                    <h1 class=" text-black mb-8 font-bold text-2xl"  style="font-family: EB Garamond;">Address</h1>
+                    <h1 class=" text-black mb-8 font-bold text-2xl" style="font-family: EB Garamond;">Address</h1>
                 </div>
                 <div>
                     <p class="text-gray-500 text-center">A108 Adam Street,<br>New York, NY 535022</p>
@@ -461,7 +452,7 @@
                 class="bg-gray-100 p-6 flex justify-center items-center flex-col border-[1px] border-gray-400 border-collapse">
                 <div class="mb-4"><img src="images/location.png" alt=""></div>
                 <div>
-                    <h1 class="text-2xl text-black mb-8 font-bold"  style="font-family: EB Garamond;">Call Us</h1>
+                    <h1 class="text-2xl text-black mb-8 font-bold" style="font-family: EB Garamond;">Call Us</h1>
                 </div>
                 <div>
                     <p class="text-gray-500 text-center">+88 01750 00 00 00<br>
@@ -474,7 +465,7 @@
                 class="bg-gray-100 p-6 flex justify-center items-center flex-col border-[1px] border-gray-400 border-collapse">
                 <div class="mb-4"><img src="images/location.png" alt=""></div>
                 <div>
-                    <h1 class="text-2xl text-black mb-8 font-bold"  style="font-family: EB Garamond;">Email Us</h1>
+                    <h1 class="text-2xl text-black mb-8 font-bold" style="font-family: EB Garamond;">Email Us</h1>
                 </div>
                 <div>
                     <p class="text-gray-500 text-center">info@gmail.com<br>
@@ -487,7 +478,7 @@
                 class="bg-gray-100 p-6 flex justify-center items-center flex-col border-[1px] border-gray-400 border-collapse">
                 <div class="mb-4"><img src="images/location.png" alt=""></div>
                 <div>
-                    <h1 class="text-2xl text-black mb-8 font-bold"  style="font-family: EB Garamond;">Working Hours</h1>
+                    <h1 class="text-2xl text-black mb-8 font-bold" style="font-family: EB Garamond;">Working Hours</h1>
                 </div>
                 <div>
                     <p class="text-gray-500 text-center">Mon-Fri: 9AM to 5PM<br>
@@ -619,7 +610,17 @@
 
 
 
-
+    <script>
+        function navigateCarousel(slideNumber) {
+            const carousel = document.querySelector('.carousel');
+            const targetSlide = document.getElementById(`slide${slideNumber}`);
+            carousel.scrollTo({
+                top: 0,
+                left: targetSlide.offsetLeft,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 
 
